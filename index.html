@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<meta charset="UTF-8">
+	<title>ОСАГО Доход от продажи продукта</title>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('.button').click(function(){
+	$('#progress-bar').animate({width: "100%"}, "slow");
+	$('.percent').html('100%');
+	$('.red-box').html('0');
+	});
+});
+</script> 
+</head>
+<body>
+	<div class="test-box">
+		<div class="red-box">25</div>
+		<div class="border-header"></div>
+		<div class="test-content">
+			<div class="box">
+				<div class="box-text">
+					<strong>1.Осаго</strong>
+					<span>Доход от продажи продукта:</span>
+					<em>290 - 2000 р.</em>
+				</div>
+				<div class="progress">
+					<strong>Обязательный курс</strong>
+					<div class="bar-border">
+						<div class="percent">75%</div>
+						<div id="progress-bar"></div>
+					</div>
+					<a href="#" class="button">Продолжить</a>
+					<em>осталось 15 минут</em>
+				</div>
+			</div>
+		</div>
+		<div class="border-footer"></div>
+	</div>
+</body>
+</html>
